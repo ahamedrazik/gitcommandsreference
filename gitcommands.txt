@@ -1,0 +1,113 @@
+git commands
+1.git --version
+2.git help config
+3.git config --help
+4.mkdir test->creating new folder
+5.cd test
+6.git init->inialize the git
+7.git status->used to track any changes from git
+8.git add demo.txt->is ued to track the txt where it add from the git
+9.git commit -m "text changed as text"
+10.connecting git to github remotely->before make sure u have a github account
+11.just create new repositiries in github 
+12.command to  connect repositri through git->git config --global user.username githubaccountname  here
+13.git remote add origin https://github.....(here repositorayname)->is used to attach github in remotely from git
+13.git push origin master->is used to push git code in github
+14.pull from remote->git pull<remotename><branchname>
+15.git mv->used to rename file
+16.revert the commit->git revert <commit id>
+17.exit command to logout gitbase
+popular git commands:
+1.git init
+2.git add/add .
+3.git commit -m "some test"
+4.git status
+5.git log->list out all commit made by your branch
+6.git diff->view thw changes you have made in git
+7.git config --global user.email xxx.gmail.com->tell who u r configer author emailid
+8.git clone->create a git repositary copy from a remote source
+9.git branch <branchname>->used to create a new branch
+10.git checkout <branchname>->switch from one branch to another
+11.git merge <branchname>->merge a branch into active branch
+12.git rebase->reapply commit on top of another base tip
+13.git config --list ->check wether remote connect or not 
+14.git diff-tree -r (commit hashcode)->used to list out all commits
+
+
+git account name:ahamedrazik 
+username:razeekhan383@gmail.com
+password:razgithub123
+step1:adding file to git by using git add demo.txt
+step2:commiting the file using->git commit -m "added sy"
+step3:link githubaccount using commands 
+step4:finally push the code from the git using->git push origin master
+
+that's all over
+
+
+
+
+
+ create a new repository on the command line
+echo "# cloudformation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahamedrazik/cloudformation.git
+git push -u origin main
+
+
+
+
+
+or push an existing repository from the command line
+git remote add origin https://github.com/ahamedrazik/cloudformation.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+creating branch
+git branch test_branch
+
+switch dat from master to test-branch 
+git checkout test_branch
+
+ want to merge from master data to test_branch 
+use:git merge test_branch
+
+to create txt from the git use->touch master.txt
+commands->notepad master.txt->used to open notepad in git bash
+
+commit history command->git log --pretty=oneline
+
+get pervious commit->git reset --soft (logname)
+
+
+deleted the branch by using cmd->git branch -D <branchname> ->is used to delete branch in local computer git but not in server(github repository)if u want to delete branch in server (github)use this cammands->
+git push origin --delete <branchname>
+
+
+git branch -v ->is used to list out the branch
+
+
+merge  branch into master ->git merge <branchname>
+
+
+
+
+git remote
+git remote -v
+git remote remove origin
+git remote set-url <REMOTE-NAME> <NEW-URL>
+git remote set-url origin https://github.com/git/git.git->import origin already exist means use this
+to solved
+git remote rename <old-name> <new-name>
+git remote rename origin backup
+
+
+
